@@ -76,8 +76,9 @@ section {
 }
 
 header {
-	height: 90vh;
+	height: 400px;
 	background: url(../img/header_second_bg.jpg) center center no-repeat;
+	@include background-size(cover);
 	h1 {
 		padding-top: 11rem;
 		margin-top: 0;
@@ -97,6 +98,7 @@ header {
 .constructor {
 	padding: 5rem 0;
 	background: url(../img/682/content_bg2.jpg) center center no-repeat;
+	@include background-size(cover);
 	h2 {
 		color: $white;
 		text-transform: none;
@@ -134,91 +136,6 @@ header {
 		}
 	}
 }
-
-footer {	
-	.ftrmenu {
-		background: url(../img/footer_bg.jpg);
-		.col4 {
-			@include span(3);
-			@include breakpoint($tablet) {
-				@include span(12);
-				padding: 1rem;
-			}
-			padding: 2rem 1rem;
-			img {
-				margin-top: 10px;
-			}
-			h3 {
-				color: $white;
-			}
-			p {
-				color: $white;
-			}
-			ul {
-				padding-left: 0;
-				li {
-					list-style: none;
-				a {
-					text-decoration: none;
-					display: block;
-					color: $white;
-					text-align: left;
-				}
-				}
-			}
-			.form {
-				input {
-					margin-top: 1rem;
-					margin-right: 0;
-			        text-align: center;
-			        display: block;
-			        border: 0;
-			        padding: 0.8rem 1rem;
-			        width: 100%;
-				}
-				.btn {
-					width: 100%;
-				}
-			}
-		}
-		.col42 {
-			padding-left: 3rem;
-			@include breakpoint($tablet) {
-				padding-left: 1rem;
-			}
-		}
-		.copy {
-			@include breakpoint($tablet) {
-				display: none;
-			}
-			p {	
-				font-size: 0.7rem;
-				padding-top: 1rem;
-			}
-			a {
-				text-decoration: none;
-				color: $white;
-			}
-		}
-
-	}
-	.mobile {
-		display: none;
-		@include breakpoint($tablet) {
-			display: block;
-			@include span(12);
-		}
-		p {	
-			font-size: 1rem;
-			padding-top: 1rem;
-		}
-		a {
-			text-decoration: none;
-			color: $white;
-		}
-	}
-}
-
 
 
 
@@ -331,6 +248,7 @@ footer {
 
 .header700 {
 	background: url(../img/700/header_bg.jpg) center center no-repeat;
+	@include background-size(cover);
 	height: 80vh;
 	.head_container {
 		@include span(6 first);
@@ -338,7 +256,8 @@ footer {
 }
 
 .desc700 {
-	background: url(../img/700/desc_bg.jpg);
+	background: url(../img/700/desc_bg.jpg) right center no-repeat;
+	@include background-size(cover);
 	padding-bottom: 3rem;
 	.desc_text {
 		@include span(6 first);
@@ -367,6 +286,7 @@ footer {
 
 .advert700 {
 	background: url(../img/700/advert_bg.jpg) center center no-repeat;
+	@include background-size(cover);
 	h2 {
 		text-align: center;
 		color: $white;
@@ -411,6 +331,7 @@ footer {
 
 .main_header {
 	background: url(../img/main_header_bg.jpg) center center no-repeat;
+	@include background-size(cover);
 	height: 90vh;
 	padding-top: 5rem;
 	h3 {
@@ -421,6 +342,7 @@ footer {
 
 .main_682 {
 	background: url(../img/682_back.jpg) center center no-repeat;
+	@include background-size(cover);
 	background-color: $gray;
 	.container {
 		position: relative;
@@ -510,6 +432,7 @@ footer {
 			.desc_682 {
 				.text_682 {
 					background: url(../img/682_bg.jpg) center center no-repeat;
+					@include background-size(cover);
 					position: absolute;
 					width: 50%;
 					right: 0;
@@ -537,6 +460,7 @@ footer {
 
 .main_700 {
 	background: url(../img/700_back.jpg) center center no-repeat;
+	@include background-size(cover);
 	padding-bottom: 8rem;
 	.container {
 		position: relative;
@@ -551,6 +475,7 @@ footer {
 			position: relative;
 			.text_700 {
 				background: url(../img/700_bg.jpg) center center no-repeat;
+				@include background-size(cover);
 				position: absolute;
 				left: 0;
 				top: 130px;
@@ -579,6 +504,7 @@ footer {
 
 .main_advert {
 	background: url(../img/advert_bg.jpg) center center no-repeat;
+	@include background-size(cover);
 	padding-bottom: 100px;
 	.container {
 		.advert_pre_btn {
@@ -603,6 +529,93 @@ footer {
 					margin: 2rem;
 				}
 			}
+		}
+	}
+}
+
+
+//FOOTER AREA ////////////////////////////////////////
+footer {	
+	.ftrmenu {
+		background: url(../img/footer_bg.jpg) center center no-repeat;
+		@include background-size(cover);
+		.col4 {
+			@include span(3);
+			@include breakpoint($tablet) {
+				@include span(12);
+				padding: 1rem;
+			}
+			padding: 2rem 1rem;
+			img {
+				margin-top: 10px;
+			}
+			h3 {
+				color: $white;
+			}
+			p {
+				color: $white;
+			}
+			ul {
+				padding-left: 0;
+				li {
+					list-style: none;
+				a {
+					text-decoration: none;
+					display: block;
+					color: $white;
+					text-align: left;
+				}
+				}
+			}
+			.form {
+				input {
+					margin-top: 1rem;
+					margin-right: 0;
+			        text-align: center;
+			        display: block;
+			        border: 0;
+			        padding: 0.8rem 1rem;
+			        width: 100%;
+				}
+				.btn {
+					width: 100%;
+				}
+			}
+		}
+		.col42 {
+			padding-left: 3rem;
+			@include breakpoint($tablet) {
+				padding-left: 1rem;
+			}
+		}
+		.copy {
+			@include breakpoint($tablet) {
+				display: none;
+			}
+			p {	
+				font-size: 0.7rem;
+				padding-top: 1rem;
+			}
+			a {
+				text-decoration: none;
+				color: $white;
+			}
+		}
+
+	}
+	.mobile {
+		display: none;
+		@include breakpoint($tablet) {
+			display: block;
+			@include span(12);
+		}
+		p {	
+			font-size: 1rem;
+			padding-top: 1rem;
+		}
+		a {
+			text-decoration: none;
+			color: $white;
 		}
 	}
 }
