@@ -538,6 +538,28 @@ header {
 	}
 }
 
+// CONSTRUCTOR
+select {
+	height: 40px;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	padding: 0.5rem;
+	outline: $blue;
+	margin-bottom: 1rem;
+	margin-right: 1rem;
+}
+
+fieldset {
+	margin-bottom: 1rem;
+}
+.btn {
+	margin-bottom: 2rem;
+}
+
+img {
+	width: 50%;
+}
+
 
 //FOOTER AREA ////////////////////////////////////////
 footer {	

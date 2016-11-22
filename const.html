@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Техносистемы</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="https://use.fontawesome.com/97c414d8d5.js"></script>
+
+</head>
+<body>
+	<nav>
+        <div class="pre-nav">
+            <div class="container">
+                <div class="address">
+                    <p><i class="fa fa-map-marker"></i> г.Ижевск, Ключевой поселок, 11а</p>
+                </div>
+                <div class="phone">
+                    <p><a href="tel:+73412655845"><i class="fa fa-mobile"></i> 8 (3412) 655-845</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <div class="container">
+                <div class="brand">
+                    <a href="#top" class="smoothScroll"><img src="img/logo.png" alt="Кузовной и слесарный ремонт в Ижевске"></a>
+                </div>
+                 <div class="menu">
+                    <ul class="nav-toggle">
+                        <li><a href="#">TCS682</a></li>
+                        <li><a href="#">TCS700</a></li>
+                        <li><a href="#">Конструктор</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="nav-collapse">
+                        <div id="nav-icon">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+    	<div class="container">
+    		<h1>Конструктор счетчика</h1>
+    	</div>
+    </header>
+
+    <section class="content">
+    	<div class="container">
+    		<form action="">
+            <select name="" id="type">
+                <option disabled selected value="def">Тип счетчика</option>
+                <option value="type1">TCS700</option>
+                <option value="type2">TCS682</option>   
+            </select>
+            <select name="" id="product-type">
+                <option disabled selected value="def">Выбор продукта</option>
+                <option id="product1" value="product1">SP - Светлые нефтепродукты: бензин, дизель, моторное масло, керосин</option>
+                <option id="product2" value="product2">SPA - Светлые нефтепродукты, авиационный керосин, реактивное топливо</option>
+                <option id="product3" value="product3">SPD - Светлые нефтепродукты, этанол, метанол, этилен гликоль, нафта</option>
+                <option id="product4" value="product4">IC - Спирты, растворители, ацетон и другие несмазывающие жидкости</option>
+                <option id="product5" value="product5">IP - Пищевые продукты, сиропы, жиры, латекс </option>
+                <option id="product6" value="product6">AF - Растворители, краски, ядохимикаты, удобрения, клеи, промышленные химикаты</option>
+                <option id="product7" value="product7">SS - все вышеперечисленные продукты, кислоты, соки, уксус, противообледнительная жидкость</option>
+                <option id="product8" value="product8">SSD - мочвина, AD-Blue</option>
+                <option id="product9" value="product9">LP - Сжиженные углеводородные газы, амиак</option>
+            </select><br>
+            <select name="" id="rashod">
+                <option disabled selected value="def">Габаритный размер</option>
+                <option id="rashod1" value="rashod1">1-1/2"; 0,76 - 189</option>
+                <option id="rashod2" value="rashod2">1-1/2"; 19 - 227</option>
+                <option id="rashod3" value="rashod3">2"; 38 - 380</option>
+                <option id="rashod4" value="rashod4">2"; 38 - 567</option>
+                <option id="rashod5" value="rashod5">3"; 76 - 760</option>
+                <option id="rashod6" value="rashod6">3"; 76 - 1135</option>
+                <option id="rashod7" value="rashod7">4"; 151 - 1893</option>
+                <option id="rashod8" value="rashod8">4"; 151 - 2271</option>
+                <option id="rashod9" value="rashod9">6"; 223 - 3040</option>
+                <option id="rashod10" value="rashod10">6"; 223 - 3800</option>
+            </select>
+            <select name="" id="recorder">
+                <option disabled selected value="def">Тип регистратора</option>
+                <option id="recorder1" value="recorder1">Механический</option>
+                <option id="recorder2" value="recorder2">Электронный 75°</option>
+                <option id="recorder3" value="recorder3">Электронный 90°</option>
+                <option id="recorder4" value="recorder4">Электронный установленный удалённо</option>
+                <option id="recorder5" value="recorder5">Без регистратора</option>
+            </select>
+            <fieldset id="add">
+                <input id="add1" type="checkbox" value="add1">Фильтр<br>
+                <input id="add2" type="checkbox" value="add2">Фильтр-газоотделитель<br>
+                <input id="add3" type="checkbox" value="add3">Принтер<br>
+                <input id="add4" type="checkbox" value="add4">Механический клапан отсечения дозы<br>
+                <input id="add5" type="checkbox" value="add5">Электронный клапан отсечения дозы<br>
+                <input id="add6" type="checkbox" value="add6">Датчик температуры<br>
+                <input id="add7" type="checkbox" value="add7">Клапан air-check<br>
+                <input id="add8" type="checkbox" value="add8">Импульсный передатчик<br>
+                <input id="add9" type="checkbox" value="add9">Фильтр-газоотделитель большеобъёмный<br>
+            </fieldset>
+
+            <a href="#" class="btn" id="calc">Посчитать</a>
+            </form>
+            <div class="result"></div>
+            </div>
+    	</div>
+    </section>
+
+    
+	<section class="constructor">
+		<div class="container">
+	    	<h2>Проверенная конструкция имеет более 80 лет непревзойденной производительности и продолжает обеспечивать лучшие показатели в измерении расхода.</h2>
+	    	<a href="#" class="btn">Заказать</a>
+    	</div>
+	</section>
+
+	<section class="feed">
+		<div class="container">
+    		<div class="col3">
+    			<div class="news">
+    				<h3>Заголовок новости</h3>
+	    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae beatae ullam velit, possimus perspiciatis nulla.</p>
+	    			<a href="#" class="btn">Читать далее</a>
+    			</div>
+    		</div>
+    		<div class="col3">
+    			<div class="news">
+    				<h3>Заголовок новости</h3>
+	    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae beatae ullam velit, possimus perspiciatis nulla.</p>
+	    			<a href="#" class="btn">Читать далее</a>
+    			</div>
+    		</div>
+    		<div class="col3">
+    			<div class="news">
+    				<h3>Заголовок новости</h3>
+	    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae beatae ullam velit, possimus perspiciatis nulla.</p>
+	    			<a href="#" class="btn">Читать далее</a>
+    			</div>
+    		</div>		    		
+		</div>
+	</section>
+
+	<footer>
+	    	<div class="ftrmenu">
+	    		<div class="container">
+		    		<div class="col4 copy">
+		    			<img src="img/logo.png">
+		    			<p>&copy 2016 ООО “Компания ”ТЕХНО-СИСТЕМЫ”<br>Все права защищены.<br>Любое использование материалов сайта без разрешения правообладателя запрещено.</p>
+		    			<p>Сделано в <a href="#">КРЕМ</a></p>
+		    		</div>
+		    		<div class="col4 col42">
+		    			<h3>Полезные ссылки</h3>
+		    			<ul>
+		    				<li>
+		    					<a href="#">Ссылка</a>
+		    					<a href="#">Ссылка</a>
+		    					<a href="#">Ссылка</a>
+		    					<a href="#">Ссылка</a>
+		    					<a href="#">Ссылка</a>
+		    				</li>
+		    			</ul>
+		    		</div>
+		    		<div class="col4 col42">
+		    			<h3>Контакты</h3>
+		    			<p>Адрес</p>
+		    			<p>Телефон</p>
+		    			<p>Мыло</p>
+		    		</div>
+		    		<div class="col4">
+		    			<h3>Обратная связь</h3>
+		    			<div class="form">
+		    				<input type="name" name="name" placeholder="Имя" required>
+		    				<input type="e-mail" name="e-mail" placeholder="e-mail" required>
+		    				<input type="text" class="btn" type="submit" name="send" value="Отправить">
+		    			</div>
+		    		</div>
+		    		<div class="col4 mobile">
+		    			<img src="img/logo.png">
+		    			<p >&copy 2016 ООО “Компания ”ТЕХНО-СИСТЕМЫ”<br>Все права защищены.<br>Любое использование материалов сайта без разрешения правообладателя запрещено.</p>
+		    			<p>Сделано в <a href="#">КРЕМ</a></p>
+		    		</div>
+	    		</div>
+	    	</div>
+    </footer>
+
+    <!-- jQuery --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- Other JS -->
+    <!-- <script src="js/smoothscroll.min.js"></script> -->
+    <script src="js/remodal.min.js"></script>
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/jquery.easing.compatibility.min.js"></script>
+    <script src="js/smoothscroll.min.js"></script>
+    <!-- Core -->
+    <script src="js/main.min.js"></script>
+	
+</body>
+</html>
