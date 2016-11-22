@@ -33,8 +33,8 @@ $(document).ready(function() {
 	var features = new TimelineMax();
 
 	features
-		.to('.main_682 .container .pre_682 .pre_img', 1, {y: 50, ease: Power2.easeInOut})
-		.to('.main_682 .container .pre_682 .pre_text', 1, {y: -70, ease: Power2.easeInOut}, "-=1");
+		.to('.main_682 .container .pre_682 .pre_img', 1, {y: 70, ease: Power2.easeInOut})
+		.to('.main_682 .container .pre_682 .pre_text', 1, {y: -120, ease: Power2.easeInOut}, "-=1");
 
 	var featuresScene = new ScrollMagic.Scene({
 		triggerElement: ".main_682",
@@ -50,13 +50,13 @@ $(document).ready(function() {
 
 	main682
 		.to('.rec_682 h2', 1, {x: 80, autoAlpha: 1, ease: Power2.easeInOut})
-		.to('.main_682 .container .rec_682 .img_682', 1, {y: -40, ease: Power2.easeInOut}, "-=1")
-		.to('.main_682 .container .rec_682 .desc_682 .text_682', 1, {y: 50, ease: Power2.easeInOut}, "-=1");
+		.to('.main_682 .container .rec_682 .img_682', 1, {y: -70, ease: Power2.easeInOut}, "-=1")
+		.to('.main_682 .container .rec_682 .desc_682', 1, {y: 120, ease: Power2.easeInOut}, "-=1");
 
 	var main682Scene = new ScrollMagic.Scene({
 		triggerElement: ".rec_682",
 		triggerHook: "0.6",
-		duration: 700
+		duration: 900
 	})
 	.setTween(main682)
 	//.addIndicators()
@@ -67,13 +67,13 @@ $(document).ready(function() {
 
 	main700
 		.to('.main_700 h2', 1, {x: -80, autoAlpha: 1, ease: Power2.easeInOut})
-		.to('.main_700 .container .img_700', 1, {y: -40, ease: Power2.easeInOut}, "-=1")
-		.to('.main_700 .container .desc_700 .text_700', 1, {y: 60, ease: Power2.easeInOut}, "-=1");
+		.to('.main_700 .container .img_700', 1, {y: -100, ease: Power2.easeInOut}, "-=1")
+		.to('.main_700 .container .desc_700', 1, {y: 120, ease: Power2.easeInOut}, "-=1");
 
 	var main700Scene = new ScrollMagic.Scene({
 		triggerElement: ".main_700",
 		triggerHook: "0.7",
-		duration: 700
+		duration: 900
 	})
 	.setTween(main700)
 	//.addIndicators()
