@@ -2,7 +2,7 @@ $(document).ready(function() {
 	
 	//Nav scroll
 	  $(window).scroll(function(event) {
-	    if ($(window).scrollTop()>=700){
+	    if ($(window).scrollTop()>=300){
 	      $('nav .main-nav').addClass('nav-scroll');
 	      $('.pre-nav').css('transform', 'translateY(-30px)');
 	    } else {
@@ -10,7 +10,7 @@ $(document).ready(function() {
 	      $('.pre-nav').css('transform', 'translateY(0px)');
 	    }
 
-	    if ($(window).scrollTop()<=699){
+	    if ($(window).scrollTop()<=299){
 	      $('nav .main-nav').removeClass('nav-scroll');
 	      $('.pre-nav').css('transform', 'translateY(0px)');
 	    } else {
@@ -33,11 +33,11 @@ $(document).ready(function() {
 	var features = new TimelineMax();
 
 	features
-		.to('.main_682 .container .pre_682 .pre_img', 1, {y: 70, ease: Power2.easeInOut})
-		.to('.main_682 .container .pre_682 .pre_text', 1, {y: -120, ease: Power2.easeInOut}, "-=1");
+		.to('.main_700 .container .pre_700 .pre_img', 1, {y: 70, ease: Power2.easeInOut})
+		.to('.main_700 .container .pre_700 .pre_text', 1, {y: -120, ease: Power2.easeInOut}, "-=1");
 
 	var featuresScene = new ScrollMagic.Scene({
-		triggerElement: ".main_682",
+		triggerElement: ".main_700",
 		triggerHook: "0.8",
 		duration: 500
 	})
@@ -46,36 +46,36 @@ $(document).ready(function() {
 	.addTo(controller);
 
 	//MAIN 682 ANIM
-	var main682 = new TimelineMax();
+	var main700 = new TimelineMax();
 
-	main682
-		.to('.rec_682 h2', 1, {x: 80, autoAlpha: 1, ease: Power2.easeInOut})
-		.to('.main_682 .container .rec_682 .img_682', 1, {y: -70, ease: Power2.easeInOut}, "-=1")
-		.to('.main_682 .container .rec_682 .desc_682', 1, {y: 120, ease: Power2.easeInOut}, "-=1");
+	main700
+		.to('.rec_700 h2', 1, {x: 80, autoAlpha: 1, ease: Power2.easeInOut})
+		.to('.main_700 .container .rec_700 .img_700', 1, {y: -70, ease: Power2.easeInOut}, "-=1")
+		.to('.main_700 .container .rec_700 .desc_700', 1, {y: 120, ease: Power2.easeInOut}, "-=1");
 
 	var main682Scene = new ScrollMagic.Scene({
-		triggerElement: ".rec_682",
+		triggerElement: ".rec_700",
 		triggerHook: "0.6",
 		duration: 900
 	})
-	.setTween(main682)
+	.setTween(main700)
 	//.addIndicators()
 	.addTo(controller);
 
 	//MAIN 700 ANIM
-	var main700 = new TimelineMax();
+	var main682 = new TimelineMax();
 
-	main700
-		.to('.main_700 h2', 1, {x: -80, autoAlpha: 1, ease: Power2.easeInOut})
-		.to('.main_700 .container .img_700', 1, {y: -100, ease: Power2.easeInOut}, "-=1")
-		.to('.main_700 .container .desc_700', 1, {y: 120, ease: Power2.easeInOut}, "-=1");
+	main682
+		.to('.main_682 h2', 1, {x: -80, autoAlpha: 1, ease: Power2.easeInOut})
+		.to('.main_682 .container .img_682', 1, {y: -100, ease: Power2.easeInOut}, "-=1")
+		.to('.main_682 .container .desc_682', 1, {y: 120, ease: Power2.easeInOut}, "-=1");
 
 	var main700Scene = new ScrollMagic.Scene({
-		triggerElement: ".main_700",
+		triggerElement: ".main_682",
 		triggerHook: "0.7",
 		duration: 900
 	})
-	.setTween(main700)
+	.setTween(main682)
 	//.addIndicators()
 	.addTo(controller);
 
