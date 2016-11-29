@@ -603,12 +603,42 @@ fieldset {
 	margin-bottom: 2rem;
 }
 
+.spacer {
+	height: 100px;
+}
 
-.result {
-	img {
-		width: 50%;
+.row {
+	display: inline-block;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	&:before {
+		clear: both;
+	}
+
+	.result {
+		@include span(6 first);
+		img {
+			width: 80%;
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	.details {
+		@include span(6 last);
+		
+		h4 {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-size: 1.6rem;
+		}
+
+		.btn {
+			margin-top: 2rem;
+		}
 	}
 }
+
 
 //FOOTER AREA ////////////////////////////////////////
 footer {	

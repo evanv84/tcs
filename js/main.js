@@ -524,18 +524,29 @@ $(document).ready(function() {
 		}		
 		var img682 = "<img src='../img/682.jpg'>";
 		var img700 = "<img src='../img/700.jpg'>";
+		var title = "<h4>Счетчик TCS****</h4>"
+		var price = "<p>Цена - $1000</p>"
+		var manualBtn = "<a href='#' class='btn'>Скачать инструкцию</a>"
 
 		if (type == 'type1') {
-			$("div.result").empty()
+			$("div.result").empty();
+			$("div.details").empty();
 			$('.result').append(img700);
+			$('.details').append(title);
+			$('.details').append(price);
+			$('.details').append(manualBtn);
 		}
 		
 		if (type == 'type2') {
-			$("div.result").empty()
+			$("div.result").empty();
+			$("div.details").empty();
 			$('.result').append(img682);
+			$('.details').append(title);
+			$('.details').append(price);
+			$('.details').append(manualBtn);
 		}
 
-		return false;
+		//return false;
 
 	});
 
